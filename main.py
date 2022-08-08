@@ -45,6 +45,8 @@ def print_director_movie(director):
     for row in cursor.execute("select * from Movies where director=:d",{"d":director}):
         print(row)
 
+
+
 print_all_rows()
 print_actor_movies("Leonardo DiCaprio")
 print_director_movie("Micheal Gondry")
